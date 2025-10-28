@@ -16,6 +16,10 @@ class ExcelValidatorUI:
     def upload_file(self):
         return st.file_uploader("Carregue seu arquivo Excel aqui", type=['xlsx'])
     
+    def printa_log(self, var):
+        return st.write(var)
+
+
     def display_results (self, result, error): 
         if error: 
             st.error(f"Erro na validacao: {error}")
