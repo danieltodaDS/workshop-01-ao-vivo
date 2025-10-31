@@ -11,10 +11,10 @@ class ExcelValidatorUI:
         )
     
     def display_header(self): 
-        st.title("Validador de schema excel - testa alteracao")
+        st.title("Validador de schema excel")
     
     def upload_file(self):
-        return st.file_uploader("Carregue seu arquivo Excel aqui", type=['xlsx'])
+        return st.file_uploader("Carregue seu arquivo Excel aqui - outro teste", type=['xlsx'])
     
     def printa_log(self, var):
         return st.write(var)
